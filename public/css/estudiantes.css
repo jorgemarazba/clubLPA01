@@ -1,0 +1,167 @@
+.dataTables_filter {
+    text-align: right;
+    color: rgb(238, 228, 228);
+    margin-left: 70%;
+
+}
+
+.dataTables_filter label {
+    text-align: left;
+
+}
+
+.dataTables_length label {
+    color: white;
+}
+
+
+/** Stilos botones editar y eliminar del index de idiomas */
+.btn-editar-estudiante {
+    background-color: #f7fb03;
+    color: #09090a;
+    margin-left: -213.9%;
+
+}
+
+.btn-eliminar-estudiante{
+    background-color: #e501fa;
+    color: #fff;
+    margin-left: -140%;
+    margin-top: -98%;
+    position: relative;
+
+}
+
+/** Stilos botones create  del index de idiomas */
+.btn-create-plus {
+    background-color: #1ff403a8;
+    color: #fefcfc;
+}
+
+/** Stilos label editar del index de idiomas */
+.form-control {
+    width: 60%;
+}
+
+/** Stilos texto tabla "th" del index de idiomas */
+.text-light {
+    text-align: 5PX;
+    width: -5%;
+}
+
+/* Importing Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
+    border-right: 1px solid rgba(255, 254, 254, 0.7);
+    transition: width 0.3s ease;
+}
+
+.sidebar:hover {
+    width: 150px;
+}
+
+.sidebar .logo {
+    color: #04bbf8;
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 15px;
+}
+
+.logo img {
+    width: 43px;
+    border-radius: 50%;
+}
+
+.logo h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-left: 15px;
+    display: none;
+}
+
+.sidebar:hover .logo h2 {
+    display: block;
+}
+
+.sidebar .links {
+    list-style: none;
+    margin-top: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    height: calc(100% - 140px);
+}
+
+.sidebar .links::-webkit-scrollbar {
+    display: none;
+}
+
+.links li {
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.links li:hover {
+    cursor: pointer;
+    background: #5d5e5f;
+}
+
+.links h4 {
+    color: #222;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 10px;
+}.sidebar:hover .links h4 {
+    display: block;
+}
+
+.links hr {
+    margin: 10px 8px;
+    border: 1px solid #4c4c4c;
+}
+
+.sidebar:hover .links hr {
+    border-color: transparent;
+}
+
+.links li span {
+    padding: 12px 10px;
+}
+
+.links li a {
+    padding: 10px;
+    color: #000;
+    display: none;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar:hover .links li a {
+    display: block;
+}
+
+.links .logout-link {
+    margin-top: 20px;
+}
